@@ -45,4 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjects:
-  - {fileID: 7284371903508075681, guid: 3480ff006327b584abfdf7f3210e2c48, type: 3}
+  - {fileID: 280666314239226147, guid: 84a0c882a8ebf4f4c9daa34c64603d4b, type: 3}
+  spawnRate: 0
