@@ -44,6 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf5a46bf10abf1489f8ac07d91c6172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myObject: {fileID: 0}
   gameObjects:
   - {fileID: 7284371903508075681, guid: 3480ff006327b584abfdf7f3210e2c48, type: 3}
   - {fileID: 438768916587405737, guid: 1e921cf44a72f6741bd4ada65b958d9d, type: 3}
+  - {fileID: 896863342337788617, guid: 5735843f91b7e4347bcd64994ac9026c, type: 3}
+  - {fileID: 5376349307337143581, guid: a5317c0cba4c6e14b9216f8196a09170, type: 3}
+  - {fileID: 3462700805932274076, guid: 20a8e92221c802d429ebf3365317e7d5, type: 3}

@@ -1,16 +1,20 @@
 using Unity.Mathematics;
 using UnityEngine;
+using System;
 
 public class ModelManager : MonoBehaviour
 {
-    GameObject myObject;
+    static Transform ManagerTransform; 
+    public GameObject myObject;
     int modelIndex = 0;
     public GameObject[] gameObjects;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        ManagerTransform = transform;
         myObject = Instantiate(gameObjects[modelIndex], transform);
-        print("myObject = " + myObject);
+        myObject.name = "clone";
+        print("myObject initiate = " + myObject.name);
     }
 
     // Update is called once per frame
@@ -21,13 +25,25 @@ public class ModelManager : MonoBehaviour
 
     public void UpdateModel()
     {
-        Destroy(myObject);
+        // print("myObject = " + myObject.name);
+        GameObject clone = GameObject.Find("clone");
+        try
+        {
+            print("myObject to be destroyed = " + clone.name);
+            Destroy(clone);
+        }
+        catch (Exception e)
+        {
+            print(e);
+        }
         modelIndex++;
         if (modelIndex >= gameObjects.Length)
         {
             modelIndex = 0;
         }
-        // myObject = Instantiate(gameObjects[modelIndex], transform);
-        print("model index = " + modelIndex);
+        myObject = Instantiate(gameObjects[modelIndex], ModelManager.ManagerTransform);
+        myObject.name = "clone";
+        print("myObject re-initiate = " + myObject.name);
+        print("current object = " + gameObjects[modelIndex]);
     }
 }
