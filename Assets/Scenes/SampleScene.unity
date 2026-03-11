@@ -834,6 +834,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4725220656117736740, guid: 8ff3c99a269ebe64ebbb21bcb07eb7bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5131004080954341065, guid: 8ff3c99a269ebe64ebbb21bcb07eb7bb, type: 3}
       propertyPath: m_ObjectSpawner
       value: 
